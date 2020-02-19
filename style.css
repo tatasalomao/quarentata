@@ -46,13 +46,16 @@ margin-left: 0px; }
 
 /*maps google*/
 
-#iw-container  .iw-title {
-   font-family: 'Open Sans Condensed', sans-serif;
-   font-size: 22px;
-   font-weight: 400;
-   padding: 10px;
-   background-color: #555555;
-   color: white;
-   margin: 1px;
-   border-radius: 2px 2px 0 0; /* De acordo com o arredondamento dos cantos da infowindow por padrão. */
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
 }
